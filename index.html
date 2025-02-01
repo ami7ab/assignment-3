@@ -1,0 +1,249 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Quicksand:wght@300..700&family=Sora:wght@100..800&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/ad46dffd7f.js" crossorigin="anonymous"></script>
+  <style>
+    .font-sora {
+      font-family: "Sora", serif;
+    }
+  </style>
+</head>
+<body class="bg-white">
+  <main class="bg-white font-sora max-w-screen-xl mx-auto px-10 lg:px-10">
+    <nav class="navbar bg-white flex justify-between pt-8">
+      <div><img class="pb-4" src="images/logo-header.png" alt="Logo"></div>
+      
+      <div class="hidden lg:flex items-center gap-x-4 pb-4">
+        <ul class="menu menu-horizontal px-1">
+          <li><a class="text-black" href="#">Product</a></li>
+          <li><a class="text-black" href="#">Service</a></li>
+          <li><a class="text-black" href="#">Contact Us</a></li>
+        </ul>
+      </div>
+      
+      <div class="hidden lg:flex items-center gap-x-5">
+        <i class="fas fa-search text-2xl text-black"></i>
+        <i class="fas fa-shopping-cart text-2xl text-black"></i>
+        <button class="btn btn-outline border-green-600 text-green-600 hover:bg-transparent">Login</button>
+        <button class="btn btn-success text-white">Register</button>
+      </div>
+      
+      <!-- Mobile Menu -->
+      <div class="lg:hidden flex items-center">
+        <div class="dropdown dropdown-end">
+          <label tabindex="0" class="btn btn-ghost btn-circle">
+            <i class="fas fa-bars text-3xl"></i>
+          </label>
+          <!-- <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+            <li><a href="#">Product</a></li>
+            <li><a href="#">Service</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#" class="flex items-center"><i class="fas fa-search pr-2"></i> Search</a></li>
+            <li><a href="#" class="flex items-center"><i class="fas fa-shopping-cart pr-2"></i> Cart</a></li>
+            <li><button class="btn btn-outline border-green-600 text-green-600 w-full">Login</button></li>
+            <li><button class="btn btn-success text-white w-full">Register</button></li>
+          </ul> -->
+        </div>
+      </div>
+    </nav>    
+    <div class="pt-30 mt-10">
+      <h1 class="text-5xl animate-bounce sm:text-5xl text-center leading-40 text-black font-semibold">
+        Freshness <span class="text-green-600 animate-bounce"> You Can <br>Count</span> On, Prices You’ll Love!
+      </h1>
+      
+      
+   <p class="pt-6 text-gray-600 text-center">Shop your daily essentials at unbeatable prices. From fresh produce to pantry <br> staples, we’ve got you covered every day!</p>
+    </div>
+    <div class="flex justify-center pt-10">
+      <img class="mx-auto" src="images/hero-vegetables.png" alt="">
+    </div>
+    <div><h1 class="text-4xl text-green-600 pt-10 mt-10  font-semibold">Services</h1></div>
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 pt-10">
+  
+      <div class="card bg-[#efebe3]  shadow-xl p-10">
+        <div class="flex justify-center items-center">
+          <img class="bg-white rounded-full p-5" src="images/service.png" alt="">
+        </div>
+                <div class="card-body">
+          <h2 class=" justify-centercard-title text-black text-center text-2xl font-semibold">24/7 Services </h2>
+          <p class="justify-center text-center text-gray-700">If a dog chews shoes whose shoes does he choose?</p> 
+        </div>
+      </div>
+
+      <div class="card bg-[#efebe3]  shadow-xl p-10">
+        <div class="flex justify-center items-center">
+          <img class="bg-white rounded-full p-5" src="images/delivery.png" alt="">
+        </div>
+                <div class="card-body">
+          <h2 class=" justify-centercard-title text-black text-center text-2xl font-semibold">First Delevery</h2>
+          <p class="justify-center text-center text-gray-700">If a dog chews shoes whose shoes does he choose?</p> 
+        </div>
+      </div>
+
+      <div class="card bg-[#efebe3] shadow-xl p-10">
+        <div class="flex justify-center items-center">
+          <img class="bg-white rounded-full p-5" src="images/healthy.png" alt="">
+        </div>
+                <div class="card-body">
+          <h2 class=" justify-centercard-title text-black text-center text-2xl font-semibold">Healthy Product</h2>
+          <p class="justify-center text-center text-gray-700">If a dog chews shoes whose shoes does he choose?</p> 
+        </div>
+      </div>
+    </div>
+    <!-- problem -->
+     
+    <div class="">
+      <h1 class="text-4xl text-green-600  pt-10 mt-10 pb-8 font-semibold">Popular Product</h1>
+                  
+      <div class="">
+        
+      <div>
+        <div class="grid grid-cols-1 md:grid-cols-5 gap-4 w-full"> 
+        <div class="bg-[#efebe3] flex px-10 py-8  rounded-lg p-4 md:col-span-2 w-full bg-gradient-to-tl from-green-400 to-green-800">
+          <div>
+          <h1 class="text-2xl text-white font-semibold py-6">30% off</h1>
+          <p class="text-black pb-6">Discover a world of treats, toys, and essentials handpicked for </p>
+          <button class="btn text-black bg-white border-0 px-10 py-4 hover:bg-white">Buy Now </button>
+        </div>
+        <img class="relative w-[100px] h-[100px] -mb-[80px] -right-10" src="images/vegetable-offer.png" alt="Onion">
+        <div>
+          <div class="relative ">
+            
+        </div>
+        
+      </div>
+                        
+        
+                  
+                  
+                  
+                  
+                </div>
+              </div>
+            </div>
+            
+          </div>
+
+
+        
+  <!-- Problem -->
+  </main>
+  <div><h1 class="text-4xl text-center text-green-600 pt-10 mt-10  font-semibold">More Product</h1></div>
+  <div class="carousel pt-20 h-[600px] w-full">
+    <div id="item1" class="carousel-item w-full">
+      <img
+        src="images/bio-healthy-food-banner-template_23-2148931429.jpg"
+        class="w-full" />
+    </div>
+    <div id="item2" class="carousel-item w-full">
+      <img
+        src="images/flat-world-vegetarian-day-social-media-cover-template_23-2149061520.jpg"
+        class="w-full" />
+    </div>
+    <div id="item3" class="carousel-item w-full">
+      <img
+        src="images/gradient-horizontal-banner-template-world-vegan-day-celebration_23-2150816488.jpg"
+        class="w-full" />
+    </div>
+    <div id="item4" class="carousel-item w-full">
+      <img
+        src="images/vegetable-grocery-product-sale-promotion-facebook-cover-web-banner-design_551555-228.jpg"
+        class="w-full" />
+    </div>
+  </div>
+  <div class="flex w-full justify-center gap-2 py-2">
+    <a href="#item1" class="btn btn-xs">1</a>
+    <a href="#item2" class="btn btn-xs">2</a>
+    <a href="#item3" class="btn btn-xs">3</a>
+    <a href="#item4" class="btn btn-xs">4</a>
+  </div>
+
+  <section class="bg-white font-sora max-w-screen-xl mx-auto px-10 lg:px-10">
+    <div>
+      <h1 class="text-4xl text-green-600 pt-10 mt-10 font-semibold">Arrival & Offers</h1>
+    </div>
+    
+    <div class="pt-10 gap-4 sm:gap-6 lg:grid lg:grid-cols-2 sm:grid-cols-1 space-y-6 lg:space-y-0">
+ 
+      <div class="bg-green-800 flex flex-col lg:flex-row justify-between rounded-3xl px-6 py-8 lg:px-16 lg:py-10 gap-6">
+        <div class="flex flex-col justify-between text-center lg:text-left">
+          <img src="images/dawat-logo.png" alt="Dawat Logo" class="max-w-full h-auto mb-4">
+          <button class="btn btn-success sm:mt-10 px-10 py-3 text-white font-semibold">Cook Exotic Dishes</button>
+          <h1 class="text-3xl text-white mt-4 lg:mt-0">UP to <span class="font-bold">20% OFF</span></h1>
+        </div>
+      
+      
+        <div class="flex justify-center lg:justify-start items-center">
+          <img src="images/dawat-mock-up.png" alt="Dawat Mockup" class="max-w-full h-auto">
+        </div>
+      </div>
+      
+    
+      
+      <div class="bg-blue-950 flex flex-col lg:flex-row justify-between rounded-3xl px-6 py-8 lg:px-16 lg:py-5">
+        <div class="flex flex-col justify-between mb-6 lg:mb-0">
+          <img class="w-[100px] max-w-full h-auto" src="images/india-gate-logo.png" alt="">
+          <button class="btn btn-success text-white bg-blue-600 border-0 hover:bg-blue-600 mt-4 lg:mt-0">World’s No.1 Rice</button>
+          <h1 class="text-3xl text-white mt-4 lg:mt-0">UP to <span class="font-bold">40% OFF</span></h1>
+        </div>
+        <div class="flex items-center lg:ml-10">
+          <img src="images/india-gate-mock-up.png" alt="" class="max-w-full h-auto">
+        </div>
+      </div>
+    </div>
+    
+
+
+<div class="border-1 bg-[#efebe3] flex flex-col relative z-10 sm:flex-row justify-between px-16 py-4 items-center mt-20 rounded-3xl border-gray-950">
+  <div><img src="images/vegetable-busket.png" alt=""></div>
+  <div><h1 class="text-4xl text-black font-semibold">Get Grocery News!</h1>
+  <p class="py-4 text-gray-600">Exclusive training tips, ticks, product deals and more.</p>
+  <input type="text" name="text" placeholder="Enter your email...." id="" class="w-full px-4 py-4 border border-gray-300 rounded-lg text-gray-800 focus:outline-none focus:ring-2 focus:ring-blue-500 bg-white">
+    <button class="btn success-btn bg-green-600 text-white border-0 mt-4">Subscribe</button>
+  </div>
+</div>
+  </section>
+
+  
+
+  <footer class="bg-green-600">
+    <div class="pt-[300px] pb-[100px] max-w-screen-xl mx-auto px-10 lg:px-10 -mt-[200px]">
+      <div class="flex flex-wrap justify-between items-center">
+
+        <div class="w-full md:w-1/3 mb-6 md:mb-0 text-center md:text-left">
+          <img src="images/logo-footer.png" alt="Logo" class="mx-auto md:mx-0">
+          <p class="text-gray-200 text-[18px] pt-[20px] md:w-[300px] mx-auto md:mx-0">Discover a world of treats, toys, and essentials handpicked for your furry friends</p>
+        </div>
+
+        <div class="w-full md:w-1/3 mb-6 md:mb-0 text-center md:text-left">
+          <ul class="space-y-6">
+            <li><a href="#" class="text-gray-200 cursor-pointer text-[20px]">Product</a></li>
+            <li><a href="#" class="text-gray-200 cursor-pointer text-[18px]">Service</a></li>
+            <li><a href="#" class="text-gray-200 cursor-pointer text-[18px]">Contact Us</a></li>
+          </ul>
+        </div>
+  
+        <div class="w-full md:w-1/3 text-center md:text-left">
+          <p class="text-gray-200 text-[20px]">Follow Us</p>
+          <div class="gap-4 pt-6 flex justify-center md:justify-start">
+            <i class="fa-brands fa-facebook text-3xl text-white"></i>
+            <i class="fa-brands fa-instagram text-3xl text-white"></i>
+            <i class="fa-brands fa-linkedin text-3xl text-white"></i>
+            <i class="fa-brands fa-youtube text-3xl text-white"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+  
+  
+</body>
+</html>
